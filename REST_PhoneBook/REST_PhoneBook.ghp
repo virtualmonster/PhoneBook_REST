@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_c buildID="I20230331_0116" certificateAuthority="KEY_1024_BITS"
+    comments="Project created on 14 September 2023"
+    creationVersion="10.5.3" domain="default" extDocPrefix=""
+    name="REST_PhoneBook" owner="STUART.WALKER"
+    rulesCacheUri="%%PROJECT/ROOT%%Rules"
+    updateResultsDbOnItemChange="false" uuid="0000018a-9379-3e56-0000-925146c2da10">
+    <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace=""/>
+    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
+    <serverSettings ghRepositoryURL="https://localhost:5443/RTCP"
+        trustSource="INBUILT_CA" trustStorePath="">
+        <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
+            <connectionParams ZOSEnv="false"
+                dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+                dpsOption="false" dpsPass="#com.ghc.1!e821" dpsUser=""
+                driverClass="com.mysql.cj.jdbc.Driver"
+                password="#com.ghc.1!440e4477E348A2E57265"
+                url="jdbc:mysql://localhost:3306/results" user="root">
+                <dpsSsl useSsl="false"/>
+                <stubSettings maxProcCallCount="10000"
+                    maxResultSetRowCount="10000" maxRowCount="10000"
+                    password="#com.ghc.1!24dd"
+                    procedureLearningBehaviour="1" schema="" url=""
+                    useIntegratedDB="true" useSsl="false" user=""/>
+                <storedProcedureFilter catalogFilterEnabled="false"
+                    catalogFilterPattern=""
+                    procedureFilterEnabled="false"
+                    procedureFilterPattern="" schemaFilterEnabled="true"
+                    schemaFilterPattern="root"
+                    storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+                <timestampFormatting timestampFormatZero="false"
+                    timestampFormattingEnabled="false" timestampPrecision="9"/>
+                <proxy useProxy="false"/>
+            </connectionParams>
+        </dbConnectionParameters>
+        <automationServer enabled="false" hostname="192.168.56.2.nip.io"
+            port="443" projectId="4992600"
+            projectName="Transparent Remoting" publishResults="true"
+            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!1885" trustStorePath=""/>
+    </serverSettings>
+    <permissionsSettings ADtrustSource="NONE"
+        ADtrustStorePassword="#com.ghc.1!742b" ADtrustStorePath=""
+        autoLogin="true" host="US-PNP-DC05"
+        permFactId="ldap.permissions.factory.none" port="389" pswd="DhZ6yEjE2TO5kCYxGDcqp2BBKVYY+IKQI9uJlXNwGCE=$k4ZCuBLGO+B5pwIlVAJmkarkDgzv/iTTN3PPNPGHjbE="/>
+    <resultPublishers disableAll="false"/>
+</_c>

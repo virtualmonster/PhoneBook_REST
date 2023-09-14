@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1694606383293"
+    createdUser="STUART.WALKER" id="13c63b74:18a8a4d6776:-7add"
+    type="excel_test_data" updatedTimestamp="1694606797017"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig autoMapColumns="true" hasColumnNamesLine="true"
+        linesBeforeColumnNames="0" linesToSkip="0"
+        location="%%PROJECT/ROOT_DIRECTORY%%/PhoneBookData.xlsx"
+        loop="false" sheetName="" treatEmptyStringAsNull="false"
+        treatTextAsEmpty="false" treatTextAsEmptyValue=""
+        treatTextAsNull="false" treatTextAsNullValue=""/>
+</editableResource>

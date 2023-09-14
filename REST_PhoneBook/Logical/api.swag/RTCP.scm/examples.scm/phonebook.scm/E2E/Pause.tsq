@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1694612503357"
+    createdUser="STUART.WALKER" id="-75b75858:18a8e8ee412:-7b19"
+    type="test_resource" updatedTimestamp="1694612519935"
+    updatedUser="STUART.WALKER" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="-75b75858:18a8e8ee412:-7ae1"
+                selfDescribing="Enable the user to interact with the test as it runs.  A dialogue will provide information the user and prompt for a response."
+                type="user_interaction_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description=""
+                    displaytext="waiting.... "
+                    name="message waiting.... &quot;"
+                    requestdetails="false" storetag="" timeout="0" useroptions="2"/>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

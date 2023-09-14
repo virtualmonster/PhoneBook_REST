@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1694606737754"
+    createdUser="STUART.WALKER" id="13c63b74:18a8a4d6776:-7ab0"
+    references="13c63b74:18a8a4d6776:-7add" type="test_resource"
+    updatedTimestamp="1694609517180" updatedUser="STUART.WALKER" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="13c63b74:18a8a4d6776:-7a1a"
+                references="13c63b74:18a8a4d6776:-7add"
+                selfDescribing="Use the current row of test data to populate tag values."
+                type="test_data_fetch_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig advCursor="false" description="" name="from &quot;PhoneBook Test Data&quot;">
+                    <tdsref id="13c63b74:18a8a4d6776:-7add"
+                        lkname="PhoneBook Test Data"
+                        lkpath="api/RTCP/examples/phonebook/PhoneBook Test Data" type="excel_test_data"/>
+                    <mapper disableFiltersWhenEmpty="false"
+                        knownColumns="firstName,lastName,phoneNumber,title" noAutoMap="firstName,lastName,phoneNumber,title">
+                        <mapping columnName="firstName"
+                            tagName="firstName" type="4"/>
+                        <mapping tagName="id" type="0"/>
+                        <mapping tagName="id_output" type="0"/>
+                        <mapping columnName="lastName"
+                            tagName="lastName" type="4"/>
+                        <mapping columnName="phoneNumber"
+                            tagName="phoneNumber" type="4"/>
+                        <mapping columnName="title" tagName="title" type="4"/>
+                    </mapper>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="13c63b74:18a8a4d6776:-7969"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true"
+                    loggingMessage="%%title%%&#xa;%%firstName%%&#xa;%%lastName%%&#xa;%%phoneNumber%%"
+                    name="%%title%%" outputFile="" role="0"/>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="SELECT" outputMode="SELECT">
+            <tag defaultValue="" description="" name="id">
+                <tagProps>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="" description="" name="id_output">
+                <tagProps>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="a" description="" name="firstName">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="123" description="" name="phoneNumber">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="a" description="" name="lastName">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+            <tag defaultValue="a" description="" name="title">
+                <tagProps>
+                    <prop key="interfaceInput" value="true"/>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>
